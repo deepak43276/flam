@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <input type="color" id="colorPicker" value="#000000" title="Color">
+      <input type="range" id="brushSize" min="1" max="50" value="5" title="Brush Size">
+      <button id="brushBtn" class="active">Brush</button>
+      <button id="eraserBtn">Eraser</button>
+      <button id="clearBtn">Clear</button>
+      <button id="undoBtn">Undo</button>
+      <div class="room-info">
+        <input id="roomId" placeholder="Room ID" value="default">
+        <button id="joinBtn">Join Room</button>
+        <span id="userCount">0 users</span>
+      </div>
+    </div>
+    
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+      <div id="cursors"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="canvas.js"></script>
+  <script src="websocket.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,15 +1,11 @@
-powershell
-New-Item -Path "README.md" -ItemType File
-README.md (Complete content - copy this):
 
-text
-# Collaborative Drawing Canvas 🖌️
+# Collaborative Drawing Canvas 
 
 Real-time multi-user drawing app using **raw HTML Canvas API** + **Socket.io**. No external drawing libraries.
 
 
 
-## 🚀 Quick Start
+##Start
 
 ```bash
 # Clone & Install
@@ -21,17 +17,16 @@ npm install
 npm start
 Open http://localhost:3000 in multiple tabs to test!
 
-✨ Features Implemented
-✅ Real-time drawing sync - See others draw live
-✅ Live user cursors - Track other users' positions
-✅ Global Undo/Redo - Anyone can undo anyone's strokes
-✅ Brush + Eraser - Multiple colors & sizes
-✅ Mobile touch support
-✅ Conflict handling - Last draw wins
-✅ Room system - Separate drawing spaces
-✅ High DPI retina - Crisp drawing on all screens
-
-🧪 Testing Multi-User
+ Features Implemented
+Real-time drawing sync - See others draw live
+ Live user cursors - Track other users' psitions
+Global Undo/Redo - Anyone can undo anone's strokes
+ Brush + Eraser - Multiple colors & sizes
+Mobile touch support
+ Conflict handling - Last draw wins
+ Room system - Separate drawing spaces
+ High DPI retina - Crisp drawing on all screens
+ Testing Multi-User
 Open 3 browser tabs/windows
 
 Enter same Room ID (default works)
@@ -46,7 +41,7 @@ Try Eraser - erases all strokes
 
 text
 User1 draws → User2 sees immediately → User1 undoes → User2 canvas updates
-📁 Folder Structure
+ Folder Structure
 text
 collaborative-canvas/
 ├── client/           # Frontend (HTML5 Canvas + JS)
